@@ -43,29 +43,29 @@ body {
     font-weight: bold;
 }
 .btn-main {
-    background-color: #007bff;
+    background-color: var(--color-Default);
     color: white;
-    border: 2px solid #007bff;
+    border: 2px solid var(--color-Default);
     
     &:hover{
-        background-color: #4895ff;
+        background-color: var(--color-hover);
     }
     &:click{
-        background-color: #004aad;
+        background-color: var(--color-click);
     }
 }
 
 .secundary{
     background-color: #ffffff;
-    color: #007bff;
+    color: var(--color-Default);
 
     &:hover{
-        color: #4895ff;
-        border: 2px solid #4895ff;
+        color: var(--color-hover);
+        border: 2px solid var(--color-hover);
     }
     &:click{
-        color: #004aad;
-        border: 2px solid #004aad;
+        color: var(--color-click);
+        border: 2px solid var(--color-click);
     }
 }
 
@@ -77,4 +77,10 @@ body {
 .label {
     font-size: 16px;
     font-weight: bold;
+}
+
+:root{
+    --color-Default:#007bff;
+    --color-hover:#4895ff;
+    --color-click:#004aad;
 }
