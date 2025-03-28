@@ -1,0 +1,32 @@
+.sidebar {
+  display: flex;
+  flex: 0 0 300;
+  height: 100vh;
+  width: 300px;
+  background-color: var(--color-sidebar-background);
+  gap: var(--sidebar-row-gap);
+}
+.row {
+  align-items: center;
+  gap: var(--sidebar-row-gap);
+}
+.account-container {
+  flex-direction: column;
+  gap: var(--account-container-gap);
+  width: 163px;
+  height: 50px;
+  border-radius: 10px;
+  padding: var(--account-container-padding);
+  font-size: 18px;
+  border: 2px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+
+:root {
+  --color-sidebar-background: #1b1b1b;
+  --sidebar-row-gap: 0;
+  --account-container-gap: 10px;
+  --account-container-padding: 12px 52px;
+  --account-borde-radius: 10px;
+}
